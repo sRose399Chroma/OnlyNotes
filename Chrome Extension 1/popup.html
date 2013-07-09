@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        width: 357px;
+        overflow-x: hidden;
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+      
+      .buttons
+      {
+      	top:0px;
+      	height: 50px;
+      	width: 100%;
+      	left: 0px;
+      	position: fixed;
+      	background-color:red;
+      	border-bottom: 1px black solid;
+      }
+      
+      #all
+      {
+      	
+      	left:0%;
+      	
+      }
+      
+      #favorites
+      {
+      	
+      	left:25%;
+      	
+      }
+      
+      #reblogs
+      {
+      	
+      	left:50%;
+      	
+      }
+      
+      #follows
+      {
+      	
+      	left:75%;
+      	
+      }
+      
+      .sele
+      {
+      	text-align: center;
+      	padding-top: 15px;
+      	height: 35px;
+      	width: 25%;
+      	top: 0px;
+      	
+      	
+      	background-color: gray;
+      	position: absolute;
+      }
+      
+      .sele:hover
+      {
+      	background-color: white;
+      }
+      
+      #content
+      {
+      	margin-top: 55px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="myc.js"></script>
+  </head>
+  <body>
+  	<div class="buttons">
+  		<div id="all" class="sele">All Notes</div>
+  		<div id="favorites" class="sele">Likes</div>
+  		<div id="reblogs" class="sele">Reblogs</div>
+  		<div id="follows" class="sele">Follows</div>
+  	</div>
+  	
+  	<div id="content">
+  		
+  	</div>
+  </body>
+</html>
+
